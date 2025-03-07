@@ -25,3 +25,12 @@ To set up the project locally, follow these steps:
 ```sh
 git clone https://github.com/your-username/resume-builder.git
 cd resume-builder
+
+2️⃣ Install dependencies
+```sh
+npm install
+
+3️⃣ Start the development server
+```sh
+npm run dev
+
