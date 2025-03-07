@@ -21,7 +21,7 @@ A **Resume Builder** built using **React**, allowing users to create, preview, a
 ## 📦 Installation & Setup
 To set up the project locally, follow these steps:
 
-### 1️⃣ Clone the repository
+1️⃣ Clone the repository
 ```sh
 git clone https://github.com/your-username/resume-builder.git
 cd resume-builder
