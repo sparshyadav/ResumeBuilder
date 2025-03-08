@@ -17,6 +17,10 @@ function Resume({ formData, theme }) {
                     </div>
                 </div>
                 <div className="border"></div>
+                <div className="resume-summary">
+                    <h3>Profile Summary</h3>
+                    <p className="experience-loop">{formData.summary}</p>
+                </div>
                 <div className="resume-experience">
                     <h3>Experience</h3>
                     {formData.companies.map((com, index) => (

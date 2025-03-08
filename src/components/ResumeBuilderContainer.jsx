@@ -15,13 +15,14 @@ function ResumeBuilder() {
         schools: [""],
         degrees: [""],
         skills: "",
+        summary: ""
     });
 
     const resumeRef = useRef(null);
-    const [theme, setTheme]=useState(true);
+    const [theme, setTheme] = useState(true);
 
-    function toggleTheme(){
-        setTheme((prev)=>!prev);
+    function toggleTheme() {
+        setTheme((prev) => !prev);
         console.log("Theme -> ", theme);
     }
 
@@ -143,6 +144,18 @@ function ResumeBuilder() {
                         />
                     </div>
 
+                    <div className="user-profile">
+                        <h3>Profile Summary
+                            <input
+                                type="text"
+                                name="summary"
+                                placeholder='Profile Summary'
+                                value={formData.summary}
+                                onChange={handleChange}
+                                required
+                            />
+                        </h3>
+                    </div>
                     <div className="user-experience">
                         <h3>Experience</h3>
                         {formData.experiences.map((exp, index) => (
@@ -225,8 +238,8 @@ function ResumeBuilder() {
                     </div>
                 </form>
                 <div className="choose-theme-container">
-                    <button onClick={toggleTheme}>Dark</button>
-                    <button onClick={toggleTheme}>Light</button>
+                    <button onClick={toggleTheme}>Theme 1</button>
+                    <button onClick={toggleTheme}>Theme 2</button>
                 </div>
                 <button onClick={handleDownloadPDF}>Download Resume</button>
             </div>
